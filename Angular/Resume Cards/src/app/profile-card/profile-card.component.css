@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+.circle {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.country {
+  margin: 0 auto;
+  width: 280px;
+  height: 200px;
+}
+.newbtn {
+  margin: 10px auto;
+  width: 50%;
+  height: auto;
+}
+.border-bottom {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding: 5px;
+  list-style: none;
+}
+.border-bottom2 {
+  border-bottom: 1px solid rgb(140, 87, 87);
+  list-style: none;
+}
+.left-text{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

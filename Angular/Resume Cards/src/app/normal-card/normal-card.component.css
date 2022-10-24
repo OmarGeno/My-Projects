@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+.circle {
+  margin: 10px auto;
+  width: 230px;
+  height: 200px;
+  border-radius: 50%;
+}
+.country {
+  margin: 0 auto;
+  width: 280px;
+  height: 200px;
+}
+.newbtn {
+  margin: 10px auto;
+  width: 50%;
+  height: auto;
+}

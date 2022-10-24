@@ -1,0 +1,16 @@
+    <div class="card" style="width: 18rem; background-color: {{cardinfo.check ? 'lightblue' : ''}}">
+        <img src="https://i.etsystatic.com/36532523/r/il/97ae46/4078306713/il_340x270.4078306713_n74s.jpg" class="card-img-top circle" alt="...">
+        <div class="card-body">
+          <h4 class="card-title" style="background-color: {{cardinfo.style.bg}}; font-size: {{cardinfo.style.fSize}}; color: {{cardinfo.style.fColor}} ">
+            {{title}} {{cardinfo.fullName}}
+          </h4>
+          <h5 class="card-text">
+            I am form {{cardinfo.country}} <br> 
+            Take a look at an image of my city, Tokyo.
+          </h5>
+        </div>
+        <img src="https://st3.depositphotos.com/1035350/16784/i/1600/depositphotos_167848428-stock-photo-tokyo-japan-cityscape.jpg" class="card-img-top img-responsive country " alt="...">
+        <button type="button" class="btn newbtn {{cardinfo.check ? 'btn-danger' : 'btn-success'}}" (click)="ToggleAccept()">
+            {{cardinfo.check ? "Undo" : "Pass"}}
+        </button>
+      </div>

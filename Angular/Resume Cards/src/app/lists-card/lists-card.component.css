@@ -1,0 +1,33 @@
+.list-left{
+    text-align: left;
+}
+.border-bottom {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    list-style: none;
+  }
+.border-bottom2 {
+    list-style: none;
+  }
+.li-bg{
+  /* background: rgb(145, 254, 252); */
+  cursor: pointer;
+  line-height: 2rem;
+}
+.margin-set-li{
+  padding: 1rem;
+}
+.li-bg:hover{
+  background: rgb(145, 254, 252);
+  transition: all .2s ease-in-out;
+}
+.newbtn {
+  margin: 10px auto;
+  width: 50%;
+  height: auto;
+}
+.card{
+  width: 350px !important;
+}
+.danger{
+  background-color: lightcoral;
+}

@@ -1,0 +1,23 @@
+<router-outlet></router-outlet>
+
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid d-flex justify-content-center text-center" style="background-color: rgb(228, 251, 206)">
+    <div class="main">
+        <h3 style="background-color: rgb(255, 210, 210); width: auto; border-radius: 10px; margin-top: 10px;" >
+            {{title | uppercase}}
+        </h3>
+        <app-normal-card class="cont2"></app-normal-card>
+    </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center text-center" style="background-color:rgb(206, 251, 238);">
+    <app-profile-card class="cont2"></app-profile-card>
+</div>
+
+<div class="container-fluid d-flex justify-content-center text-center" style="background-color:rgb(228, 251, 206);">
+    <app-lists-card class="cont2"></app-lists-card>
+</div>
+
+<div class="container-fluid d-flex justify-content-center text-center" style="background-color:rgb(228, 251, 206);">
+    <app-login class="cont2"></app-login>
+</div>

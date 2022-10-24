@@ -1,0 +1,44 @@
+<div class="card" style="width: 18rem; background-color: {{profileinfo.check ? 'rgb(161, 241, 161)' : ''}}">
+    <div class="card-body">
+        <h4 class="card-title" style="background-color: {{profileinfo.style.bg}}; color: {{profileinfo.style.fColor}} ">
+          {{title}} {{profileinfo.fullName}}
+        </h4>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/206/206881.png" class="card-img-top circle" alt="...">
+    <div class="card-body">
+      <h6 class="card-text border-bottom">
+        Living in {{profileinfo.residence}}
+      </h6>
+        <ul class="border-bottom"> 
+            <h6>Contact</h6>
+            <li style="font-size: {{profileinfo.style.fSize}}; color: {{profileinfo.style.fColor}} ">
+                <u>
+                    {{profileinfo.phoneNum}} 
+                </u>
+            </li>
+            <li style="font-size: {{profileinfo.style.fSize}}; color: {{profileinfo.style.fColor}}">
+               <u>
+                {{profileinfo.email}}
+               </u> 
+           </li>
+        </ul>
+      <ul class="border-bottom"> 
+        <h6>Personal skills</h6>
+        <li *ngFor="let skill of skills" class="list-group-item list-group-item-info border-bottom2">
+            {{skill}}
+        </li>
+      </ul>
+      <ul class="border-bottom"> 
+        <h6>Professional experience</h6> 
+        <li *ngFor="let experience of proExperiences" class="list-group-item list-group-item-info border-bottom2">
+            <span>
+                {{experience}}
+            </span>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="btn newbtn {{profileinfo.check ? 'btn-danger' : 'btn-success'}}" (click)="ToggleAccept()">
+        {{profileinfo.check ? "Undo" : "Pass"}}
+    </button>
+  </div>
+

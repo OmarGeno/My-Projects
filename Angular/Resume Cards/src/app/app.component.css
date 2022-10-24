@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cont2{
+    margin: 10px 0;
+}
+.container-fluid{
+    box-shadow: 0px 0px 50px 5px black;
+}

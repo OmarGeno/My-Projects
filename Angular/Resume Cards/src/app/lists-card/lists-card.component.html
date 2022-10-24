@@ -1,0 +1,32 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">
+        <u>
+            {{items[0].skill[0].fullName}}
+        </u>
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+        Choose the best out of these {{MyList}}
+      </h6>
+        <ol *ngFor="let group of items; let i = index" class="list-left border-bottom margin-set-li"> 
+            <li class="list-left">
+               <h6>
+                {{group.category}}:
+               </h6> 
+            </li>
+            <ol *ngFor="let item of group.skill; let y = index" class="list-left border-bottom2"> 
+                <li class="list-left ">
+                  <span class="li-bg list-left">
+                    <p class=" {{item.bool ? 'danger' : ''}}">
+                        <input type="checkbox" [checked]="item.bool" (change)="ChangeItem(i, y)">
+                        {{item.name}}
+                      </p>
+                  </span>
+                </li>
+            </ol>
+        </ol>
+        <button type="button" class="btn newbtn btn-success" (click)="ToggleAccept()">
+          Submit
+        </button>
+    </div>
+  </div>
