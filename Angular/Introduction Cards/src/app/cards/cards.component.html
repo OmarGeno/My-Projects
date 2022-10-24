@@ -1,0 +1,61 @@
+<div class="main-body">
+  <div class="w-100">
+
+    <div class="search-bar">
+      <input type="text" name="search" class="form-control me-2" placeholder="Filter By Name" [(ngModel)]="searchText">
+    </div>
+
+    <div class="card-generated">
+      <div *ngFor="let post of posts.record | filter:searchText" class="main-card">
+          <div class="upper-div">
+            <img src="{{post.profile_img}}" alt="" class="upper-img">
+          </div>
+          <div class="info-div">
+            <h4 class="h2-e" style="text-align: center;">
+              {{post.title}} {{post.first_name}} {{post.last_name}}
+            </h4> <br>
+            <p>
+              {{post.job_title}} at {{post.company_name}}
+            </p>
+          </div>
+      
+          <div class="btn-class">
+            <button class="follow" (click)="ToggleEffect()">
+              {{check ? "Following" : "Follow"}}
+            </button>
+            <button class="message">
+              Message 
+            </button>
+          </div>
+      
+          <div>
+            <p class="media">
+              {{post.address.street.number}}, {{post.address.street.name}}, {{post.address.city}}, {{post.address.country}}
+            </p>
+          </div>
+      
+          <div class="down-div">
+            <div class="icon-div">
+              <div *ngFor="let item of post.icon">
+                <img src="{{item}}" alt="" class="ic">
+              </div>
+            </div>
+            
+            <div class="icon-text">
+              <p *ngFor="let p of post.media" class="ic-text">
+                {{p}}
+            </p>
+          </div>
+          
+          <div class="icon-link">
+            <a href="https://angular.io/" *ngFor="let a of post.media" class="links" target="_blank" rel="noreferrer"
+            style="text-decoration: none; cursor: pointer; color: rgb(50, 152, 157); ">
+            @{{a}}_
+          </a>
+        </div>
+      </div>
+      
+        </div>
+    </div>
+  </div>
+</div>
