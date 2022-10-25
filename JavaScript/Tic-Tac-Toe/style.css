@@ -1,0 +1,30 @@
+body {
+  background-color: #282c34;
+  color: white;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Permanent Marker", cursive;
+}
+.cell-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.cell {
+  line-height: 75px;
+  font-size: 40px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #9aff98;
+  cursor: pointer;
+  text-align: center;
+}
+.players {
+  display: flex;
+}
+.info {
+  margin: 0 25px 15px 25px;
+}
