@@ -5,3 +5,7 @@ You have 2 images above of the game deisgn. The game was made with React hooks t
 ![](https://github.com/OmarGeno/My-Projects/blob/Master/React%20JS/Tic%20Tac%20Toe/1.png)
 
 ![this is an img](https://github.com/OmarGeno/My-Projects/blob/Master/React%20JS/Tic%20Tac%20Toe/2.png)
+
+<p align="center">
+        <img src="https://github.com/OmarGeno/My-Projects/blob/Master/React%20JS/Tic%20Tac%20Toe/2.png" alt="" size= 250px>
+</p>
