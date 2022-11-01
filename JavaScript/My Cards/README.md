@@ -4,4 +4,4 @@
 ###### 2- Fetched data from the json file. 
 ###### 3- inserted all the data into the new objects created. 
  
-![PresentationVideo](https://github.com/OmarGeno/My-Projects/blob/Master/JavaScript/My%20Cards/WhatsApp%20Video%202022-08-31%20at%2016.08.42.mp4)
+[![PresentationVideo](https://i.imgur.com/vKb2F1B.png)](https://github.com/OmarGeno/My-Projects/blob/Master/JavaScript/My%20Cards/WhatsApp%20Video%202022-08-31%20at%2016.08.42.mp4)
